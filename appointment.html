@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+     <title>Appointment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <style>
+    * {
+box-sizing: border-box;
+}
+
+nav{
+position: fixed;
+z-index: 10;
+padding: 0.5%;
+left: 0;
+right: 0;
+top: 0;
+font-family:'Montserrat', sans-serif;
+height: 100px;
+background-color: cornflowerblue;
+
+}
+nav .logo{
+float: left;
+width: 40%;
+height: 75%;
+display: flex;
+align-items: center;
+font-size: 30px;
+color: black;
+}
+nav .topnav{
+float: right; 
+text-decoration: none;
+padding: 0;
+margin: 0;
+width: 60%;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+nav .topnav li{
+list-style-type: none;
+}
+
+nav .topnav a:hover{
+background-color: white;
+}
+
+nav .topnav a{
+display: block;
+padding: 1em;
+font-weight: bold;
+text-decoration: none;
+color: black;
+
+}
+
+.side-bar{font-size: 9px;
+height: 25%;}
+#nav-toggle{
+position: absolute;
+top: -100px;
+}
+nav .icon-burger{
+display: none;
+position: absolute;
+right: 5%;
+top: 50%;
+transform: translateY(-50%);
+
+}
+nav .icon-burger .line{
+width: 30px;
+height: 5px;
+background-color: black;
+margin: 5px;
+border-radius: 3px;
+transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px){
+nav .logo{
+float: none;
+width: auto;
+justify-content: left;
+font-size: 1.7em;
+
+}
+@media only screen and ( max-width: 300px ) {nav .logo{font-size: 1.3em;}}
+nav .topnav{
+float: none;
+position: fixed;
+z-index: 9;
+background-color: cornflowerblue;
+flex-direction: column;
+width: auto;
+height: auto;
+left: 0;
+right: 0;
+top: 100px;
+bottom: 100%;
+overflow: hidden;
+transition: all .5s ease-in-out ;
+
+}
+nav .topnav a{
+font-size: 20px;
+
+}
+nav :checked ~ .topnav{
+bottom: 0;
+}
+nav .icon-burger{
+display: block;
+}
+nav :checked ~ .icon-burger .line:nth-child(1){
+transform: translateY(10px) rotate(225deg);
+}
+nav :checked ~ .icon-burger .line:nth-child(3){
+transform: translateY(-10px) rotate(-225deg);
+}
+nav :checked ~ .icon-burger .line:nth-child(2){
+opacity: 0;
+}
+}
+
+form{
+  position: relative;
+  justify-content: center;
+  background-color: cornflowerblue;
+  width:  27em;
+  height: 29em;
+  left: 27em;
+  margin-top: 10%;
+  padding: 10px;
+}
+@media screen and (max-width: 1000px){form{
+  margin-top: 23%;
+left: 10em;
+right: 0;}}
+@media screen and (max-width: 768px){ form{
+  margin-top: 35%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  
+}}
+@media screen and (max-width: 300px){ form{
+  margin-top: 45%;
+  
+}}
+@media screen and (min-width: 600px){
+#fname{float: left;}
+#lname{float: right;}}
+
+.box-1{
+  display: flex;
+  flex-direction: row;
+  
+}
+.box-2{
+  display: flex;
+  flex-direction: row;
+}
+.box-3{
+  display: flex;
+  flex-direction: row;
+}
+.box-i{
+  float: left;
+
+}
+ .box-ii{float: right;}
+ .box-iii{float: left;}
+ .box-iv{float: right;}
+ .box-v{float: left;}
+ 
+ 
+  input[type=text] {
+    width: 170px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid rgb(19, 117, 146);
+    margin-right: 5px;
+  }
+  @media screen and (max-width: 768px){
+    input[type=text]{
+      width: 150px;
+    }
+  }
+  @media screen and (max-width: 300px){input[type=text]{width: 120px;}}
+
+  input[type= tel] {
+      width: 170px;
+      height: 40px;
+      padding: 10px;
+      margin-top: 10px;
+      margin-right: 10px;
+  }
+  @media screen and (max-width: 300px){input[type=tel]{width: 120px;}}
+  input[type=email] {
+    padding: 10px;
+    width: 170px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 300px){input[type=email]{width: 120px;}}
+  input[type=date] {
+    margin-top: 10px; 
+    margin-right: 10px;
+  }
+  #department{
+    width: 170px;
+    padding: 10px;
+    height:40px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  @media only screen and ( max-width: 600px ) {#department{
+     padding: 10px;
+  }}
+  @media only screen and ( max-width: 300px ) {#department{
+     width: 120px;
+  }}
+  input[type=submit]{
+    margin-top: 40px;
+    padding: 10px;
+    margin-left: 30%;
+  width: fit-content;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  }
+
+  input[type=submit]:hover{
+    background-color: rgba(55, 125, 190, 0.952);
+  }
+    @media screen and (min-width: 600px){
+      input[type=submit]{
+        padding: 12px;
+    }}
+  
+  body{
+  margin: 0;
+  padding: 0;
+margin: 0;
+}
+@media only screen and ( max-width: 768px ) {body{
+  font-size: 14px;
+  
+}}
+   
+.foot {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+    height: 4em;
+  }  
+  .foot a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+
+  }
+  .foot a:hover{color: rgba(55, 125, 190, 0.952);}
+
+  span{
+    align-items: center;
+    font-size: 1.5em;
+    padding: 1.2em;
+  }
+  @media screen and (max-width: 300px) {span{font-size: 1.3em;}}
+  
+ a:hover{color: rgba(55, 125, 190, 0.952);}
+  /*footer style */
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 11em;
+    color: black;
+    font-size: large;
+  }
+  @media screen and (max-width: 768px) {.footer{
+  position: relative;
+  font-size: 1em;
+}}
+
+</style>
+
+<nav>
+  <input id="nav-toggle" type="checkbox"> 
+  <div class="logo">Biokarfred&nbsp;<strong style="color: crimson;">MedLab</strong> </br>
+    <div class="side-bar"><h3>MLSCN</br>PML 1337</h3></div></div>
+  <ul class="topnav">
+   <li><a   class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+   <li><a  href="start.html"><i class="fa fa-fw fa-user"></i>About US</a></li>
+    <li><a  href="namesless.html"><i class="fa fa-hospital-o"></i>Medical services</a></li>
+    <li><a  href="appointment.html"><i class="fa fa-calendar" aria-hidden="true"></i>Book an appointment</a></li>
+  </ul>
+  
+  <label for="nav-toggle" class="icon-burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </label>
+</nav>
+  
+
+        <form action="form.php" method="post" onSubmit="confirm('Do you want to submit?') ">
+      <div class="cont">
+        <div class="box-1">
+    <div class="box-i"><label for="fname"><p>Full Name<strong style="color: crimson;">*</strong></p></label>
+    <input type="text" id= "fname" name="firstName" placeholder="First name..." required>
+    <input  type="text" id="lname" name="lastName" placeholder="Last name..." required >
+  </div>  
+  </div>
+    <div class="box-2">
+    <div class="box-iii"><label for="phone"><p>Phone Number<strong style="color: crimson;">*</strong></p></label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="+(234) 90- 700- 0000- 00..." required>
+   </div>
+    <div class="box-iv">
+    <label for="appointmentdate"><p>Select date<strong style="color: crimson;">*</strong></p></label>
+    <input type="date" id="appointmentdate" name="date" required>
+  </div>  
+  </div>
+    <div class="box-3">
+      <div class="v">
+     <label for="email"><p>Email<strong style="color: crimson;">*</strong></p></label>
+      <input type="email" id="email" name="email" placeholder="Email..." required>
+    </div>
+    <div class="box-vi">
+     <label for="department" ><p>Departments<strong style="color: crimson;">*</strong></p></label>
+      <select name="department" id="department" size="4" required>
+        <option value="chemistry">Chemistry</option>
+        <option value="Parasitology">Parasitology</option>
+        <option value="Heamatology">Heamatology/Serology</option>
+        <option value="microscopy">Microscopy</option>
+      </select>
+      </div>
+     </div>
+        <input type="submit" value="Book Appointment"  onclick="submitbutton()"/>
+      </div>
+    </div>
+    </form>
+  </div>
+  
+  
+  <script>
+    function submitbutton(){
+      var isValidated=true;
+  if (document.getElementById('fname').value == 0){
+    document.getElementById("fname").style.border = "1px solid red";
+    isValidated= false;
+    }
+    else{
+document.getElementById("fname").style.border="1px solid green";
+isValidated=true;
+}
+if (document.getElementById('lname').value == 0){
+    document.getElementById("lname").style.border = "1px solid red";
+    isValidated= false;
+    }
+    else{
+document.getElementById("lname").style.border="1px solid green";
+isValidated=true;
+}
+   }
+    const email = document.getElementById('email');
+    if(emailValue === "") {
+      setErrorFor(email, "Email cannot be blank");
+    }
+    else if (!isEmail(emailValue)) {
+      setErrorFor(email, " Not a valid Email");
+            } else{
+              setSuccessFor(email);
+            }
+            /* to validate the email*/
+            function isEmail(email) {
+      return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
+    }
+    </script>
+
+</br>
+<div class="footer">
+  <ul class="foot">
+    <a style='list-style-type: none;' href="#">Privacy</a>
+    <a style='list-style-type: none;' href="#">Terms</a>
+    <a style='list-style-type: none;' href="#">Contact</a>
+  </ul>
+  <span> 2022, © Biokarfred Medical Laboratory</span>
+</div>
+
+
+</body>
+</html>

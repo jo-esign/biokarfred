@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        * {
+    box-sizing: border-box;
+  }
+  
+  nav{
+  position: fixed;
+  z-index: 10;
+  padding: 0.5%;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family:'Montserrat', sans-serif;
+  height: 100px;
+  background-color: cornflowerblue;
+
+}
+nav .logo{
+  float: left;
+  width: 40%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: black;
+}
+nav .topnav{
+  float: right; 
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+nav .topnav li{
+  list-style-type: none;
+}
+
+nav .topnav a:hover{
+  background-color: white;
+}
+
+nav .topnav a{
+  display: block;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+
+}
+
+.side-bar{font-size: 9px;
+height: 25%;}
+#nav-toggle{
+  position: absolute;
+  top: -100px;
+}
+nav .icon-burger{
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+nav .icon-burger .line{
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px){
+  nav .logo{
+    float: none;
+    width: auto;
+    justify-content: left;
+    font-size: 1.7em;
+
+  }
+  @media only screen and ( max-width: 300px ) {nav .logo{font-size: 1.3em;}}
+  nav .topnav{
+    float: none;
+    position: fixed;
+    z-index: 9;
+    background-color: cornflowerblue;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    overflow: hidden;
+    transition: all .5s ease-in-out ;
+
+  }
+  nav .topnav a{
+    font-size: 20px;
+
+  }
+  nav :checked ~ .topnav{
+    bottom: 0;
+  }
+  nav .icon-burger{
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1){
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3){
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2){
+    opacity: 0;
+  }
+}
+body{
+      margin: 0;
+      padding: 0;
+  }
+  @media only screen and ( max-width: 600px ) {
+    body{
+      background-position: bottom;
+      background-attachment: scroll;
+      font-size: 14px;
+    }
+  }
+  .parent-container{
+    flex-wrap: wrap;
+    
+  }
+  .services-col{
+    padding-top: 15%;
+    width: 50%;
+    padding-left: 20px;
+  }
+  @media screen and (max-width: 600px) {.services-col{
+    padding-top: 30%;
+    width: 100%;
+  } }
+  .parent-test{
+    display: flex;
+    flex-direction: row;
+    top: 50px;
+    margin: 10px;
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+  @media only screen and ( max-width: 300px ) {.parent-test{
+    font-size: 12px;
+  }}
+  
+ .test-ha{
+   border: 1px solid cornflowerblue;
+   border-width: 1px 0 0 1px;
+   width: 240px;
+   height: 332px;
+ }
+ @media only screen and ( max-width: 768px ) {
+   .test-ha{
+    width: 240px;
+   height: 330px;
+   }
+  }
+  .test-ch{
+    border: 1px solid cornflowerblue;
+    width: fit-content;
+    float: right;
+    align-self: center;
+    height: 500px;
+    margin-top: 0;
+  }
+  @media only screen and ( max-width: 400px ){.test-ch{
+    border-width: 1px, 2px, 1px, 1px;
+  }}
+ .test-mp{
+   border: 2px solid #6495ed;
+   border-width: 1px 1px 1px 1px;
+   width: 241px;
+   margin-left: 381px;
+   margin-top: -178px;
+   height: 168px;
+   ; 
+  }
+  @media only screen and ( max-width: 1100px ) {
+    .test-mp{
+      width: 242px;
+      margin-left: 279px;}
+    }
+  @media only screen and ( max-width: 1000px ) {
+    .test-mp{
+   width: 241px;
+    margin-left: 224px;
+  }}
+  @media only screen and ( max-width: 850px ) {.test-mp{
+    margin-left: 179px;
+   width: 241px;}}
+ @media only screen and ( max-width: 768px ) {
+   .test-mp{
+     width: 240px;
+    margin-left: 145px;
+   margin-top: -180px; 
+   height: 170px;
+   }
+ }
+ @media only screen and ( max-width: 600px ) {.test-mp{
+   margin-left: 50px;
+   width: 241px;
+ }}
+ @media only screen and ( max-width: 500px ){
+   .test-mp{
+     width: 209px;
+     margin-left: 30px;
+     border-width: 1px 0px 1px 1px;
+    }}
+ @media only screen and ( max-width: 400px ){
+   .gett{margin-left: -10px;
+    width: 184px;
+
+  }
+   .test-mp{width: 150px;
+padding-left: 0px;
+margin-left: 30px;
+}}
+@media only screen and ( max-width: 393px ){.test-mp{width: 185px;}}
+@media only screen and ( max-width: 380px ){.test-mp{width: 176px;}}
+@media only screen and ( max-width: 360px ){.test-mp{width: 167px;}}
+ @media only screen and ( max-width: 300px ) {
+   .test-mp{width: 132px;
+    padding-left: 0px;
+    font-size: 12px;
+    margin-left: 25px;
+  }
+  .h4{font-size: 11px;}
+.gett{
+  width: 120px;
+}}
+
+ .foot {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+    height: 4em;
+  }  
+  .foot a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+
+  }
+  .foot a:hover{color: rgba(55, 125, 190, 0.952);}
+
+  span{
+    align-items: center;
+    font-size: 1.5em;
+    padding: 1.2em;
+  }
+  @media screen and (max-width: 300px) {span{font-size: 1.3em;}}
+  
+ a:hover{color: rgba(55, 125, 190, 0.952);}
+  /*footer style */
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 11em;
+    color: black;
+    font-size: large;
+  }
+  @media screen and (max-width: 768px) {.footer{
+  position: relative;
+  font-size: 1em;
+}}
+
+
+    </style>
+    <nav>
+      <input id="nav-toggle" type="checkbox"> 
+      <div class="logo">Biokarfred&nbsp;<strong style="color: crimson;">MedLab</strong> </br>
+        <div class="side-bar"><h3>MLSCN</br>PML 1337</h3></div></div>
+      <ul class="topnav">
+       <li><a   class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+       <li><a  href="start.html"><i class="fa fa-fw fa-user"></i>About US</a></li>
+        <li><a  href="namesless.html"><i class="fa fa-hospital-o"></i>Medical services</a></li>
+        <li><a  href="appointment.html"><i class="fa fa-calendar" aria-hidden="true"></i>Book an appointment</a></li>
+      </ul>
+      
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+      
+          
+
+          <div class="services-col">
+            <h3>We offer the following services:</h3>
+            <p>Consultation</p>
+            <p>Diagonsis</p>
+            <p>Prescription of drugs based on test results</p>
+            </div>
+
+            
+            <h3 style="text-align: center;">HERE ARE SOME OF THE TESTS WE CARRY OUT </h3>   
+            <div class="parent-test" style="justify-content: center;">
+            <div class="test-ha" id=""><h4>HAEMATOLOGY</h4>
+              <ul> 
+                <li>HCV/HB</li>
+                <li>FBC</li>
+                <li>ESR</li>
+                <li>Blood Group</li>
+                <li>Genotype</li>
+                <li>VDRL</li>
+                <li>HIV</li>
+                <li>Hepatitis B Antigen</li>
+                <li>Hepatitis C Antigen</li>
+                <li>Pltelets Counts</li>
+                <li>Bleeding/Clothung Time</li>
+                <li>Xmatching</li>
+                <li>Malaria Parasite</li>
+                <li>Microfilaria</li>
+              </ul>
+            </div>
+            <div class="test-ch">
+              <h4>CHEM PATH</h4>
+              <ul>
+                <li>Blood Sugar</li>
+                <li>Liver Function Test</li>
+                <li>Electrolyte</li>
+                <li>Urea/Creatinine</li>
+                <li>Lipid Profile</li>
+                <li>Pregnancy Test</li>
+                <li>Cholesterol</li>
+                <li>Triglycerides</li>
+                <li>HDL</li>
+                <li>LDL</li>
+                <li>Prostate Specific Antigen(PSA)</li>
+                <li>Uric Acid</li>
+                <li>H.Pylori</li>
+                <li>Calcium (Ca++)</li>
+                <li>&alpha;-Feto protein </li>
+                <li>TOtal Proteins</li>
+                <li>Albumin</li>
+                <li>Glucose TOlerance Test (GTT)</li>
+                <li>Rheumatoid Factor</li>
+              </ul>
+            </div>
+          </div>
+            <div class="test-mp" style="justify-content: center;">
+              <h4 class="h4">MICRO/PARASITOLOGY</h4>
+              <ul class="gett">
+                <li>Urinanalysis</li>
+                <li>Microscopy</li>
+                <li>Stool Microscopy</li>
+                <li>Culture/Sensitivity</li>
+                <li>WIDAL Test(Typhoid Test)</li>
+              </ul>
+            </div>
+
+           
+        </br>
+        <div class="footer">
+          <ul class="foot">
+            <a style='list-style-type: none;' href="#">Privacy</a>
+            <a style='list-style-type: none;' href="#">Terms</a>
+            <a style='list-style-type: none;' href="#">Contact</a>
+          </ul>
+          <span> 2022, © Biokarfred Medical Laboratory</span>
+        </div>
+        
+      </body>
+      </div>
+</html>

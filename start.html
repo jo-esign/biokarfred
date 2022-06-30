@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        * {
+    box-sizing: border-box;
+  }
+  
+  nav{
+  position: fixed;
+  z-index: 10;
+  padding: 0.5%;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family:'Montserrat', sans-serif;
+  height: 100px;
+  background-color: cornflowerblue;
+
+}
+nav .logo{
+  float: left;
+  width: 40%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: black;
+}
+nav .topnav{
+  float: right; 
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+nav .topnav li{
+  list-style-type: none;
+}
+
+nav .topnav a:hover{
+  background-color: white;
+}
+
+nav .topnav a{
+  display: block;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+
+}
+
+.side-bar{font-size: 9px;
+height: 25%;}
+#nav-toggle{
+  position: absolute;
+  top: -100px;
+}
+nav .icon-burger{
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+nav .icon-burger .line{
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px){
+  nav .logo{
+    float: none;
+    width: auto;
+    justify-content: left;
+    font-size: 1.7em;
+
+  }
+  @media only screen and ( max-width: 300px ) {nav .logo{font-size: 1.3em;}}
+  nav .topnav{
+    float: none;
+    position: fixed;
+    z-index: 9;
+    background-color: cornflowerblue;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    overflow: hidden;
+    transition: all .5s ease-in-out ;
+
+  }
+  nav .topnav a{
+    font-size: 20px;
+
+  }
+  nav :checked ~ .topnav{
+    bottom: 0;
+  }
+  nav .icon-burger{
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1){
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3){
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2){
+    opacity: 0;
+  }
+}
+
+
+.contact-info{
+  padding-top: 10%;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+  .lab-info{
+    padding-top: 15%;
+    padding-left: 15px;
+  }
+  @media screen and (max-width: 600px) {
+    .lab-info{margin-top: 19%;}
+  
+    body{
+      float: bottom;
+      margin: 0;
+        font-size: 14px;
+  }
+}
+.foot {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+    height: 4em;
+  }  
+  .foot a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+
+  }
+  .foot a:hover{color: rgba(55, 125, 190, 0.952);}
+
+  span{
+    align-items: center;
+    font-size: 1.5em;
+    padding: 1.2em;
+  }
+  @media screen and (max-width: 300px) {span{font-size: 1.3em;}}
+  
+ a:hover{color: rgba(55, 125, 190, 0.952);}
+  /*footer style */
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 11em;
+    color: black;
+    font-size: large;
+  }
+  @media screen and (max-width: 768px) {.footer{
+  position: relative;
+  font-size: 1em;
+}}
+
+
+    </style>
+    <nav>
+      <input id="nav-toggle" type="checkbox"> 
+      <div class="logo">Biokarfred&nbsp;<strong style="color: crimson;">MedLab</strong> </br>
+        <div class="side-bar"><h3>MLSCN</br>PML 1337</h3></div></div>
+      <ul class="topnav">
+       <li><a   class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+       <li><a  href="start.html"><i class="fa fa-fw fa-user"></i>About US</a></li>
+        <li><a  href="namesless.html"><i class="fa fa-hospital-o"></i>Medical services</a></li>
+        <li><a  href="appointment.html"><i class="fa fa-calendar" aria-hidden="true"></i>Book an appointment</a></li>
+      </ul>
+      
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+      
+      
+    <div class="lab-info">
+      <h2 style="padding-left: 50px;">ABOUT US</h2>
+      <p>Biokarfred medical laboratory provides basic medical laboratory investigations for:</p>
+      <p>1. Private and public hospitals.</p>
+      <p>2. Private patients.</p>
+      <p>We also participate in NGOs programmes such as Tuberculosis eradication, HIV and Malaria awareness campaign.</p>
+      <p> And we partake in MLSC quality control programme.</p>
+    </div>
+    
+    <div class="contact-info">
+      <address> <h3 style="padding-left: 50px;">You can contact us via:</h3>
+        <b>Our Email:</b> biokarfredmedlab@gmail.com 
+      </br>
+      <b>Visit us @</b> No 1 Madaki Street, Opp. Kaduna Polytechnic, Sabon-Tasha, Kaduna.
+    </address>
+    <a href="tel:+2348136471559">You can call us at: +234-813-6471-559</a>
+  </div>
+   
+  
+<div class="footer">
+  <ul class="foot">
+    <a style='list-style-type: none;' href="#">Privacy</a>
+    <a style='list-style-type: none;' href="#">Terms</a>
+    <a style='list-style-type: none;' href="#">Contact</a>
+  </ul>
+  <span> 2021, © Biokarfred Medical laboratory</span>
+  </div>
+</body>
+  
+ 
+</html>

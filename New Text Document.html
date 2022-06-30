@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="formContainer">
+        <div class="leftSide">
+            <h2 class="formHeader">Sign Up!</h2>
+            <div class="formContentContainer">
+                <form>
+                    <input type="text" name="firstName" class="formInput" placeholder="First Name" required/>
+                    <input type="text" name="lastName" class="formInput" placeholder="Last Name" required/>
+                    <input type="text" name="email" class="formInput" placeholder="Email" required/>
+                    <input type="text" name="phoneNumber" class="formInput" placeholder="Phone Number" required />
+                    <input type="submit" class="submitButton" name="submitButton" value="Sign Up">
+                </form>
+            </div>
+        </div>
+        <div class="rightSide">
+        </div>
+        <div class="orCircle">or</div>
+    </div>
+    <style>
+        body {
+    background: linear-gradient( cyan, transparent), linear-gradient( -45deg, magenta, transparent), linear-gradient( 45deg, yellow, transparent);
+    background-blend-mode: multiply;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formContainer {
+    position: relative;
+    margin: 8% auto;
+    min-height: 60%;
+    width: 50%;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+    background: white;
+    padding: 0px 0px 5px 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.formHeader {
+    text-align: center;
+}
+.formContentContainer {
+    margin-top: 15%;
+}
+.formInput {
+    display: block;
+    margin: 0px 0px 15px 20px;
+    padding: 4px;
+    width: 80%;
+    height: 5%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 12px;
+}
+.submitButton {
+    background: dodgerblue;
+    color: white;
+    margin: 10px 20px;
+    width: 80%;
+    height: 8%;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+}
+.orCircle {
+    position: absolute;
+    top: 44%;
+    left: 47%;
+    width: 32px;
+    height: 32px;
+    background: lightgrey;
+    border-radius: 50%;
+    line-height: 32px;
+    box-shadow: 1px 1px 2px grey;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.leftSide {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.rightSide {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background: black;
+    border-radius: 8px;
+}
+    </style>
+</body>
+</html>

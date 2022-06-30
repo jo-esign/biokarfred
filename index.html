@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+       
+  <nav>
+    <input id="nav-toggle" type="checkbox"> 
+    <div class="logo">Biokarfred&nbsp;<strong style="color: crimson;">MedLab</strong> </br>
+      <div class="side-bar"><h3>MLSCN</br>PML 1337</h3></div>
+    </div>
+    <ul class="topnav">
+     <li><a   class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+     <li><a  href="start.html"><i class="fa fa-fw fa-user"></i>About US</a></li>
+      <li><a  href="namesless.html"><i class="fa fa-hospital-o"></i>Medical services</a></li>
+      <li><a  href="appointment.html"><i class="fa fa-calendar" aria-hidden="true"></i>Book an appointment</a></li>
+    </ul>
+    
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+  
+<main>
+  <div class="container">
+    <div class="contain">
+        <p>For enquiries:</p>
+        <form action="" onSubmit="confirm('Do you want to submit?') ">
+          <div class="">
+            <textarea name="message" rows="10" cols="30" placeholder="Drop your questions here..." required></textarea>
+          </div>
+          <input type="submit" class="btn"/>
+        </form>
+            </div>
+  </div>
+    
+    <div class="footer">
+      <ul class="foot">
+        <a style='list-style-type: none;' href="#">Privacy</a>
+        <a style='list-style-type: none;' href="#">Terms</a>
+        <a style='list-style-type: none;' href="#">Contact</a>
+      </ul>
+      <span> 2021, © Biokarfred Medical Laboratory</span>
+    </div>  
+</body>
+</html>
