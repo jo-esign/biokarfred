@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-VariableFont_wght.ttf);
+  }
+  body{
+    font-family: "DarkerGrotesque", sans-serif;
+  }
+  
+.animated-icon2
+{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .7s ease-in-out;
+-moz-transition: .7s ease-in-out;
+-o-transition: .7s ease-in-out;
+transition: .7s ease-in-out;
+cursor: pointer;
+}
+
+
+.animated-icon2 span
+{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .1s ease-in-out;
+-moz-transition: .1s ease-in-out;
+-o-transition: .1s ease-in-out;
+transition: .1s ease-in-out;
+}
+
+.animated-icon2 span {
+background: #1714A6;
+}
+
+
+.animated-icon2 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+  }
+  
+  .animated-icon2.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }  
+  .animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    }
+    
+    .animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+    }
+  
+  
+    sub {
+      vertical-align: sub;
+      font-weight: 400;
+      margin-top: 3%;
+      font-size: 10px;
+  line-height: 3px;
+      color: #1714A6;
+  }
+  
+     .nav{
+      background-color: white;
+     }
+     .med a{
+      color: #1714A6;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal;
+    }
+    .h3{
+      font-family:'Darker Grotesque', sans-serif;
+      color: #1714A6;
+      height: 30px;
+      font-weight: 500;
+      font-size: 30px;
+    }
+    strong{
+    font-weight: 700;
+    }
+    .med{
+      padding-right: 50px;
+      
+    }
+    
+    .med a:hover, .med a:focus {
+      color: #080868;
+  }
+  .overlay{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+      background-size: 1440px;
+      
+  }
+
+  .dub{
+    margin-left: 120px;
+  }
+.hae{
+  margin-left: 0px;
+}
+ .para{
+  margin-left: 350px;
+ }
+
+       /* Rectangle 3 */
+       footer{
+        position: absolute;
+        width: 1440px;
+        height: 120px;
+        left: 0px;
+        display: flex; 
+        background: #FFFFFF;
+        }
+        
+        /* Contact */
+        .contactt{
+          position: absolute;
+        width: 42px;
+        height: 19px;
+        left: 133px;
+        top: 40px;
+        
+        font-family: 'Darker Grotesque';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        /* identical to box height */
+        text-align: center;
+        
+        color: #1714A6;
+        }
+        
+        /* Legal&Privacy */
+        .leg{
+          position: absolute;
+          width: 74px;
+          height: 19px;
+          left: 188px;
+        top: 40px;
+        
+        font-family: 'Darker Grotesque';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        /* identical to box height */
+        text-align: center;
+        
+        color: #1714A6;
+        }
+        
+        /* connect */
+        .connect{
+          position: absolute;
+          width: 238px;
+          height: 20px;
+          left: 65%;
+          top: 30px;
+          display: flex;
+        }
+        
+        .connect svg:hover{
+          border-radius: 20px;
+          background-color: rgba(192, 23, 23, 0.952);
+          
+        }
+        
+        /* footer logo */
+        .footer_logo{
+          position: absolute;
+          width: 249px;
+          height: 90px;
+        left: 504px;
+        top: 30px;
+        }

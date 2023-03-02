@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700&display=swap');
+
+  body{
+    font-family:'Darker Grotesque', sans-serif;
+    overflow-x: hidden;
+    
+    }
+
+    
+.animated-icon2
+{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+
+.animated-icon2 span
+{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon2 span {
+background:#1714A6;
+}
+
+
+.animated-icon2 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+  }
+  
+  .animated-icon2.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+   
+  .animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    }
+    
+    .animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+    }
+    
+  
+  
+    sub {
+      vertical-align: sub;
+      font-weight: 500;
+      margin-top: 3%;
+      font-size: 10px;
+  line-height: 3px;
+      color: #1714A6;
+  }
+  
+  .nav{
+    background-color: white;
+   }
+   .med a{
+    color: #1714A6;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .h3{
+    font-family:'Darker Grotesque', sans-serif;
+    color: #1714A6;
+    height: 30px;
+    font-weight: 500;
+    
+  }
+  strong{
+  font-weight: 700;
+  }
+    .med{
+      padding-right: 50px;
+      
+    }
+    
+    .med a:hover, .med a:focus {
+      color: #080868;
+  }
+
+  .overlay{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url(about-us.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+      background-size: 1440px 1500px;
+      
+  }
+  @media screen and (max-width: 449px) and (min-width: 350px) {
+    .overlay {
+      width: 100%;
+      background-size:  1440px 1500px;
+    }
+    }
+    
+
+.contact-info{
+  font-family:'Darker Grotesque', sans-serif;
+  
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+ 
+
+  /* ABOUT US */
+.lab-info{
+position: absolute;
+width: 100%;
+
+left: 71px;
+top: 150px;
+
+font-family: 'Darker Grotesque';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+color: #FFFFFF;
+-webkit-text-stroke: .4px  #1714A6;
+
+}
+@media screen and (max-width: 1199px) and (min-width: 1000px) {
+  .lab-info{position: relative;
+  
+   
+  }
+}
+@media screen and (max-width: 999px) and (min-width: 800px) {
+  .lab-info{position: relative;
+  
+    
+  
+  }
+}
+@media screen and (max-width: 799px) and (min-width: 631px) {
+  .lab-info{position: relative;
+  
+   
+  
+  }
+}
+@media screen and (max-width: 630px) and (min-width: 525px) {
+  .lab-info{position: relative;
+  
+   
+  
+  }
+}
+@media screen and (max-width: 524px) and (min-width: 450px) {
+  .lab-info{position: relative;
+  
+    
+  
+  }
+}
+@media screen and (max-width: 449px) and (min-width: 350px) {
+  .lab-info{position: relative;
+    left: 3px;
+    top: 70px;
+    overflow-x: hidden;
+  
+  }
+}
+@media screen and (max-width: 372px) and (min-width: 249px) {
+  .lab-info{position: relative;
+  
+    
+  
+  }
+}
+
+.randd{
+  /* You can contact us via: Email: biokarfredmedlab@gmail.com */
+
+position: absolute;
+width: 100%;
+height: 170px;
+left: 70px;
+top: 458px;
+
+font-family: 'Darker Grotesque';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+
+color: #FFFFFF;
+
+-webkit-text-stroke: .4px  #1714A6;
+
+}
+/*.faq-txt{
+  background: rgba(217, 217, 217, 0.7);
+border: 1px solid #43416F;
+height:44px
+}
+.accordion{
+  position: absolute;
+width: 298px;
+background: rgba(217, 217, 217, 0.7);
+border: 1px solid #43416F;
+}
+#headingOne{
+  top:40px;
+  height: 40px;
+  right: 0px;
+  background: rgba(217, 217, 217, 0.8);
+border: 0px 0px 0px 2px #43416F;
+}
+#headingTwo{
+  top:90px;
+  height: 43px;
+  right: 0px;
+  background: rgba(217, 217, 217, 0.8);
+border: 1px solid #43416F;
+}
+#headingThree{
+  top: 130px;
+  right: 0px;
+  background: rgba(217, 217, 217, 0.8);
+border: 1px solid #43416F;
+}
+#headingFour{
+  top:170px;
+  right: 0px;
+  background: rgba(217, 217, 217, 0.8);
+border: 1px solid #43416F;
+}
+#headingFive{
+  top:210px;
+  right: 0px;
+  background: rgba(217, 217, 217, 0.8);
+border: 1px solid #43416F;
+}
+#headingSix{
+  top:250px;
+  right: 0px;
+  background: rgba(217, 217, 217, 0.8);
+border: 1px solid #43416F;
+}
+ /* Rectangle 12 
+.faq-outer{
+box-sizing: border-box;
+position: absolute;
+width: 300px;
+height: 323px;
+left: 100px;
+top: 633px;
+
+border: 1px solid #444573;
+}
+/* Rectangle 3 */
+
+.faq-bod{
+  
+    margin-left: 40%;
+    top: 0px;
+    
+    
+    
+    font-family: 'Darker Grotesque';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+  }
+  @media screen and (max-width: 2600px) {
+    .faq-bod{
+     
+     
+    
+    }
+  }
+  @media screen and (max-width: 1199px) and (min-width: 1000px) {
+    .faq-bod{
+    
+     
+    }
+  }
+  @media screen and (max-width: 999px) and (min-width: 800px) {
+    .faq-bod{
+    
+      
+    
+    }
+  }
+  @media screen and (max-width: 799px) and (min-width: 631px) {
+    .faq-bod{
+    
+     
+    
+    }
+  }
+  @media screen and (max-width: 630px) and (min-width: 525px) {
+    .faq-bod{
+    
+     
+    
+    }
+  }
+  @media screen and (max-width: 524px) and (min-width: 450px) {
+    .faq-bod{
+    
+      
+    
+    }
+  }
+  @media screen and (max-width: 449px) and (min-width: 350px) {
+    .faq-bod{
+    
+      
+    
+    }
+  }
+  @media screen and (max-width: 372px) and (min-width: 249px) {
+    .faq-bod{
+    
+      
+    
+    }
+  }
+
+  .text-secondary {
+    color: #43416F;
+    padding-left: 2%;
+  }
+
+  .faq-bod p{
+    
+font-family: 'Darker Grotesque';
+font-style: normal;
+font-weight: 400;
+
+    font-size: 1.2rem;
+  }
+  
+  .h4,
+  h4 {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    /* or 250% */
+    
+    color: #43416F;
+    
+    
+  }
+  .faq-bod .fa,
+  .fas {
+    font-family: 'fontAwesome';
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-style: bold;
+    margin-top: 10px;
+    margin-right: 30px;
+  color: #43416F;
+  
+  }
+
+  h2 {
+    color: #43416F;
+    font-family: 'Darker Grotesque';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .h-100 {
+    height: 50px;
+  }
+  
+  a.text-secondary:focus,
+  a.text-secondary:hover {
+    text-decoration: none;
+    color: #43416F;
+  }
+  
+  #accordion .fa-plus {
+    transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  }
+  
+  #accordion a[aria-expanded=true] .fa-plus {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /*  #acc{
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 800px;
+left: 300px;
+
+  } */
+
+  .card{
+    width: 50%;
+        
+  }
+    footer{
+      position: absolute;
+      width: 1440px;
+      height: 90px;
+      left: 0px;
+      display: flex; 
+      background: #FFFFFF;
+      }
+      
+      /* Contact */
+      .contactt{
+        position: absolute;
+      width: 42px;
+      height: 19px;
+      left: 133px;
+      top: 40px;
+      
+      font-family: 'Darker Grotesque';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      /* identical to box height */
+      text-align: center;
+      
+      color: #1714A6;
+      }
+      
+      /* Legal&Privacy */
+      .leg{
+        position: absolute;
+        width: 74px;
+        height: 19px;
+        left: 188px;
+        top: 40px;
+        
+      font-family: 'Darker Grotesque';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      /* identical to box height */
+      text-align: center;
+      
+      color: #1714A6;
+    }
+      
+      /* connect */
+      .connect{
+        position: absolute;
+        width: 238px;
+        height: 20px;
+        left: 65%;
+        top: 30px;
+        display: flex;
+      }
+      @media screen and (max-width: 1199px) and (min-width: 1000px) {
+        .connect{position: relative;
+        
+         
+        }
+      }
+      @media screen and (max-width: 999px) and (min-width: 800px) {
+        .connect{position: relative;
+        
+          
+        
+        }
+      }
+      @media screen and (max-width: 799px) and (min-width: 631px) {
+        .connect{position: relative;
+        
+         
+        
+        }
+      }
+      @media screen and (max-width: 630px) and (min-width: 525px) {
+        .connect{position: relative;
+        
+         
+        
+        }
+      }
+      @media screen and (max-width: 524px) and (min-width: 450px) {
+        .connect{position: relative;
+        
+          
+        
+        }
+      }
+      @media screen and (max-width: 449px) and (min-width: 350px) {
+        .connect{position: relative;
+          left: 0%;
+          width: 58px;
+          height: 10px;
+        
+        }
+      }
+      @media screen and (max-width: 372px) and (min-width: 249px) {
+        .connect{position: relative;
+        
+          
+        
+        }
+      }
+      .connect svg:hover{
+        border-radius: 20px;
+        transform: ;
+        transition: transform 0.25s ease-in-out;
+        
+      }
+      @media screen and (max-width: 1199px) and (min-width: 1000px) {
+        .faq-bod{
+        
+         
+        }
+      }
+      @media screen and (max-width: 999px) and (min-width: 800px) {
+        .faq-bod{
+        
+          
+        
+        }
+      }
+      @media screen and (max-width: 799px) and (min-width: 631px) {
+        .faq-bod{
+        
+         
+        
+        }
+      }
+      @media screen and (max-width: 630px) and (min-width: 525px) {
+        .faq-bod{
+        
+         
+        
+        }
+      }
+      @media screen and (max-width: 524px) and (min-width: 450px) {
+        .faq-bod{
+        
+          
+        
+        }
+      }
+      @media screen and (max-width: 449px) and (min-width: 350px) {
+        .connect svg{
+        position: relative;
+        width: 15px;
+        height: 15px;
+       
+        
+        }
+      }
+      @media screen and (max-width: 372px) and (min-width: 249px) {
+        .connect svg{
+        
+          
+        
+        }
+      }
+      
+      /* footer logo */
+      .footer_logo{
+        position: absolute;
+        width: 249px;
+        height: 90px;
+      left: 504px;
+      top: 30px;
+      }
+      @media screen and (max-width: 1199px) and (min-width: 1000px) {
+        .footer_logo{position: relative;
+        
+         
+        }
+      }
+      @media screen and (max-width: 999px) and (min-width: 800px) {
+        .footer_logo{position: relative;
+        
+          
+        
+        }
+      }
+      @media screen and (max-width: 799px) and (min-width: 631px) {
+        .footer_logo{position: relative;
+        
+         
+        
+        }
+      }
+      @media screen and (max-width: 630px) and (min-width: 525px) {
+        .footer_logo{position: relative;
+        
+         
+        
+        }
+      }
+      @media screen and (max-width: 524px) and (min-width: 450px) {
+        .footer_logo{position: relative;
+        
+          
+        
+        }
+      }
+      @media screen and (max-width: 449px) and (min-width: 350px) {
+        .footer_logo svg{position: relative;
+          left: 0px;
+          width: 150px;
+          height: 60px;
+          
+        }
+      }
+      @media screen and (max-width: 449px) and (min-width: 350px) {
+        .footer_logo {position: relative;
+          
+          left: 54px;
+          
+        
+        }
+      }
+      @media screen and (max-width: 372px) and (min-width: 249px) {
+        .footer_logo{position: relative;
+        
+          
+        
+        }
+      }
